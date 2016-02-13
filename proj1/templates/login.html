@@ -1,14 +1,14 @@
-<ion-view title="Login">
+<ion-view title="Login" ng-controller="loginCtrl">
     <ion-content overflow-scroll="true" padding="true" class="has-header">
         <form class="list">
             <ion-list>
                 <label class="item item-input">
-                    <span class="input-label">Username</span>
-                    <input type="text" placeholder="">
+                    <span class="input-label">Email id</span>
+                    <input type="text" placeholder="email id" ng-model="data.email">
                 </label>
                 <label class="item item-input">
                     <span class="input-label">Password</span>
-                    <input type="password" placeholder="">
+                    <input type="password" placeholder="password" ng-model="data.password">
                 </label>
             </ion-list>
             <div class="spacer" style="height: 40px;"></div>
